@@ -1,0 +1,2 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Dur 90% (s)	Freq 75% (Hz)	BW 50% (Hz)	SPP	CALL	EXP	TRIAL
+1	Spectrogram 1	1	0.216747445	1.333467979	1785.868	3936.198	0.8359	2670.117	430.664	HARU	C2	MODEL	11

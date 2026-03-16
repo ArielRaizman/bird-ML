@@ -1,0 +1,19 @@
+Selection	Begin Time (s)	End Time (s)	View	Channel	Low Freq (Hz)	High Freq (Hz)	Error Type	Confidence	Fold
+1	46.0	48.0	Spectrogram 1	1	0	22050	false_positive	0.6562160650849858	5
+2	28.0	30.0	Spectrogram 1	1	0	22050	false_negative	0.20840945350562284	5
+3	52.0	54.0	Spectrogram 1	1	0	22050	false_negative	0.48242841624558297	5
+4	54.0	56.0	Spectrogram 1	1	0	22050	false_negative	0.2502192980064248	5
+5	24.0	26.0	Spectrogram 1	1	0	22050	true_positive	0.851921763868754	5
+6	26.0	28.0	Spectrogram 1	1	0	22050	true_positive	0.725773735279786	5
+7	30.0	32.0	Spectrogram 1	1	0	22050	true_positive	0.9576542911465024	5
+8	32.0	34.0	Spectrogram 1	1	0	22050	true_positive	0.9371458496044783	5
+9	34.0	36.0	Spectrogram 1	1	0	22050	true_positive	0.981987527948148	5
+10	36.0	38.0	Spectrogram 1	1	0	22050	true_positive	0.7926584756108003	5
+11	38.0	40.0	Spectrogram 1	1	0	22050	true_positive	0.8982761975494223	5
+12	40.0	42.0	Spectrogram 1	1	0	22050	true_positive	0.8090863167237532	5
+13	42.0	44.0	Spectrogram 1	1	0	22050	true_positive	0.9433629956075411	5
+14	44.0	46.0	Spectrogram 1	1	0	22050	true_positive	0.9564514178752598	5
+15	48.0	50.0	Spectrogram 1	1	0	22050	true_positive	0.6376735646267406	5
+16	50.0	52.0	Spectrogram 1	1	0	22050	true_positive	0.8269237754477865	5
+17	56.0	58.0	Spectrogram 1	1	0	22050	true_positive	0.9610897705999036	5
+18	58.0	60.0	Spectrogram 1	1	0	22050	true_positive	0.7323194498797511	5

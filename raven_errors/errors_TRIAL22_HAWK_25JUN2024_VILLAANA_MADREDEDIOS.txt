@@ -1,0 +1,4 @@
+Selection	Begin Time (s)	End Time (s)	View	Channel	Low Freq (Hz)	High Freq (Hz)	Error Type	Confidence	Fold
+1	4.0	6.0	Spectrogram 1	1	0	22050	false_positive	0.6700523374045674	3
+2	8.0	10.0	Spectrogram 1	1	0	22050	false_positive	0.6798116229693196	3
+3	50.0	52.0	Spectrogram 1	1	0	22050	false_positive	0.5439076927882945	3
