@@ -1,0 +1,9 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Predicted Label	Classification Type	Model Probability	Fold
+1	Spectrogram 1	1	26.0	28.0	0	22050	THAR_B1	true_positive	0.836	4
+2	Spectrogram 1	1	28.0	30.0	0	22050	THAR_B1	true_positive	0.5167	4
+3	Spectrogram 1	1	30.0	32.0	0	22050	THAR_B1	false_positive	0.5111	4
+4	Spectrogram 1	1	42.0	44.0	0	22050	THAR_B1	true_positive	0.671	4
+5	Spectrogram 1	1	48.0	50.0	0	22050	THAR_B1	false_negative	0.2605	4
+6	Spectrogram 1	1	52.0	54.0	0	22050	THAR_B1	true_positive	0.6809	4
+7	Spectrogram 1	1	54.0	56.0	0	22050	THAR_B1	false_negative	0.3313	4
+8	Spectrogram 1	1	58.0	60.0	0	22050	THAR_B1	true_positive	0.8508	4

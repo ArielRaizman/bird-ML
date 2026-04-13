@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Predicted Label	Classification Type	Model Probability	Fold
+1	Spectrogram 1	1	20.0	22.0	0	22050	MYSP_C1	false_negative	0.3623	2
+2	Spectrogram 1	1	30.0	32.0	0	22050	MYSP_C1	false_positive	0.5211	2
+3	Spectrogram 1	1	32.0	34.0	0	22050	MYSP_C1	false_positive	0.525	2
+4	Spectrogram 1	1	42.0	44.0	0	22050	MYSP_C1	false_positive	0.5753	2
