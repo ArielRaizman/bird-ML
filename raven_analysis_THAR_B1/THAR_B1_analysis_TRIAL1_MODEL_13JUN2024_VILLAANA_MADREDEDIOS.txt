@@ -7,3 +7,4 @@ Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	
 6	Spectrogram 1	1	50.0	52.0	0	22050	THAR_B1	false_negative	0.1621	2
 7	Spectrogram 1	1	52.0	54.0	0	22050	THAR_B1	false_positive	0.5694	2
 8	Spectrogram 1	1	56.0	58.0	0	22050	THAR_B1	true_positive	0.7929	2
+# 8 try using this one

@@ -3,4 +3,4 @@ Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	
 2	Spectrogram 1	1	2.0	4.0	0	22050	THAR_P1	true_positive	0.9112	3
 3	Spectrogram 1	1	4.0	6.0	0	22050	THAR_P1	false_positive	0.8993	3
 4	Spectrogram 1	1	30.0	32.0	0	22050	THAR_P1	false_positive	0.8494	3
-# selection 4 looks like P1 but is in fact P3, is it because of the loudness?
+# selection 4 looks like P1 but is in fact P2, is it because of the loudness?
