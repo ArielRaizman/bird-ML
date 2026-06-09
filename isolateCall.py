@@ -5,6 +5,29 @@ import soundfile as sf
 from pathlib import Path
 from glob import glob
 from scipy.signal import butter, sosfilt
+import numpy as np
+
+def apply_spectral_contrast_gate(y, sr, multiplier):
+    # simulating ravens contrast slider
+    # create a spectogram with STFT
+    stft = librosa.stft(y, n_fft=2048, hop_length=512)
+    
+    # find mean energy of the spectrogram
+    magnitude = np.abs(stft)
+    mean_energy = np.mean(magnitude)
+    threshold = mean_energy * multiplier
+    
+    # create a mask based on the threshold
+    mask = magnitude >= threshold
+    
+    # apply the mask to the spectrogram
+    stft_clean = stft * mask
+    
+    # convert it back into audio
+    y_clean = librosa.istft(stft_clean, hop_length=512)
+    
+    return y_clean
+
 
 def bandpass_filter(data,lowcut, highcut, sr, order=5):
     nyquist = 0.5 * sr
@@ -64,14 +87,24 @@ def isolateCall(
     print("Isolating call from audio file")
     call_segment = y[call_start_idx:call_end_idx]
 
-    # applying high and low pass filters
-    filtered_call = bandpass_filter(call_segment, low_cut, high_cut, sr)
-    
     # noise reduction
     print("Performing noise reduction")
     noise_segment = y[noise_start_idx:noise_end_idx]
     filtered_noise = bandpass_filter(noise_segment, low_cut, high_cut, sr)
-    clean_call = noisereduce.reduce_noise(y=filtered_call, y_noise=filtered_noise, sr=sr)
+    clean_call = noisereduce.reduce_noise(y=call_segment, y_noise=filtered_noise, sr=sr)
+    
+    # applying high and low pass filters
+    clean_call = bandpass_filter(clean_call, low_cut, high_cut, sr)
+    
+    # apply spectral contrast gate
+    clean_call = apply_spectral_contrast_gate(clean_call, sr, 7) # 15
+
+
+    # 3x louder than median thresholding
+    # abs_signal = np.abs(clean_call)
+    # median_val = np.median(abs_signal)
+    # threshold = median_val * 7
+    # clean_call[abs_signal < threshold] = 0
 
     # export
     try:
@@ -82,14 +115,21 @@ def isolateCall(
     
 
 
-FILEPATH = "FFL-Annotations/Audio/TRIAL2_HAWK_12JUN2024_VILLAANA_MADREDEDIOS.wav"
-START = 44.846984532 - 0.1 # leeway
-END = 44.935259839 + 0.1
-# NOISE_START = 43.645
-# NOISE_END = 44.5
-NOISE_START = 43.8
-NOISE_END = 44.8
-LOW_CUT = 1671.532
-HIGH_CUT = 4872.339
-OUTPUT = "./MYSP_C1_Clean.wav"
+# FILEPATH = "FFL-Annotations/Audio/TRIAL5_HAWK_14JUN2024_VILLAANA_MADREDEDIOS.wav"
+# START = 2.209944167 - 0.1 # leeway
+# END = 2.346643614 + 0.1
+# NOISE_START = 2.4
+# NOISE_END = 3
+# LOW_CUT = 1707.097
+# HIGH_CUT = 5227.984
+# OUTPUT = "./MYAX_C4_Clean.wav"
+
+FILEPATH = "FFL-Annotations/Audio/TRIAL5_HAWK_14JUN2024_VILLAANA_MADREDEDIOS.wav"
+START = 25.096730652 - 0.1 # leeway
+END = 25.224400754 + 0.1
+NOISE_START = START-1.1
+NOISE_END = START-0.1
+LOW_CUT = 1389.706
+HIGH_CUT = 4379.436
+OUTPUT = "./MYAX_C3_Clean.wav"
 isolateCall(FILEPATH, START, END, NOISE_START, NOISE_END, LOW_CUT, HIGH_CUT, OUTPUT)

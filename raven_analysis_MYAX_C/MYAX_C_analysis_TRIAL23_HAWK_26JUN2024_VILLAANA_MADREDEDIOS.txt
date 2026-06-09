@@ -1,0 +1,7 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Predicted Label	Classification Type	Model Probability	Fold
+1	Spectrogram 1	1	0.0	2.0	0	22050	MYAX_C	false_negative	0.4046	3
+2	Spectrogram 1	1	44.0	46.0	0	22050	MYAX_C	false_negative	0.1597	3
+3	Spectrogram 1	1	46.0	48.0	0	22050	MYAX_C	false_negative	0.1392	3
+4	Spectrogram 1	1	48.0	50.0	0	22050	MYAX_C	false_negative	0.113	3
+5	Spectrogram 1	1	50.0	52.0	0	22050	MYAX_C	false_negative	0.1883	3
+6	Spectrogram 1	1	52.0	54.0	0	22050	MYAX_C	false_negative	0.3247	3

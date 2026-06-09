@@ -1,0 +1,4 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Predicted Label	Classification Type	Model Probability	Fold
+1	Spectrogram 1	1	33.0	35.0	0	22050	MYLO_C	true_positive	1.0	3
+2	Spectrogram 1	1	54.0	56.0	0	22050	MYLO_C	true_positive	0.9975	3
+3	Spectrogram 1	1	55.5	57.5	0	22050	MYLO_C	true_positive	1.0	3

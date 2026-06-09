@@ -1,0 +1,27 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Predicted Label	Classification Type	Model Probability	Fold
+1	Spectrogram 1	1	3.0	5.0	0	22050	MYLO_C	true_positive	1.0	3
+2	Spectrogram 1	1	4.5	6.5	0	22050	MYLO_C	true_positive	1.0	3
+3	Spectrogram 1	1	6.0	8.0	0	22050	MYLO_C	true_positive	0.5999	3
+4	Spectrogram 1	1	7.5	9.5	0	22050	MYLO_C	false_negative	0.0002	3
+5	Spectrogram 1	1	9.0	11.0	0	22050	MYLO_C	false_negative	0.0032	3
+6	Spectrogram 1	1	10.5	12.5	0	22050	MYLO_C	false_negative	0.001	3
+7	Spectrogram 1	1	12.0	14.0	0	22050	MYLO_C	true_positive	1.0	3
+8	Spectrogram 1	1	13.5	15.5	0	22050	MYLO_C	true_positive	1.0	3
+9	Spectrogram 1	1	16.5	18.5	0	22050	MYLO_C	false_negative	0.0448	3
+10	Spectrogram 1	1	18.0	20.0	0	22050	MYLO_C	false_negative	0.0	3
+11	Spectrogram 1	1	19.5	21.5	0	22050	MYLO_C	true_positive	0.9999	3
+12	Spectrogram 1	1	21.0	23.0	0	22050	MYLO_C	false_negative	0.0	3
+13	Spectrogram 1	1	22.5	24.5	0	22050	MYLO_C	true_positive	0.9994	3
+14	Spectrogram 1	1	24.0	26.0	0	22050	MYLO_C	true_positive	0.9929	3
+15	Spectrogram 1	1	27.0	29.0	0	22050	MYLO_C	false_negative	0.2263	3
+16	Spectrogram 1	1	30.0	32.0	0	22050	MYLO_C	true_positive	0.997	3
+17	Spectrogram 1	1	31.5	33.5	0	22050	MYLO_C	true_positive	0.9952	3
+18	Spectrogram 1	1	34.5	36.5	0	22050	MYLO_C	false_negative	0.0005	3
+19	Spectrogram 1	1	36.0	38.0	0	22050	MYLO_C	true_positive	0.9662	3
+20	Spectrogram 1	1	40.5	42.5	0	22050	MYLO_C	true_positive	1.0	3
+21	Spectrogram 1	1	42.0	44.0	0	22050	MYLO_C	true_positive	1.0	3
+22	Spectrogram 1	1	43.5	45.5	0	22050	MYLO_C	false_negative	0.0031	3
+23	Spectrogram 1	1	45.0	47.0	0	22050	MYLO_C	true_positive	0.9999	3
+24	Spectrogram 1	1	48.0	50.0	0	22050	MYLO_C	true_positive	0.9993	3
+25	Spectrogram 1	1	49.5	51.5	0	22050	MYLO_C	true_positive	0.9997	3
+26	Spectrogram 1	1	54.0	56.0	0	22050	MYLO_C	false_negative	0.0064	3
